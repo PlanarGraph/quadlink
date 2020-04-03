@@ -1,0 +1,63 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+
+body {
+    background-color: rgb(29, 28, 28);
+}
+
+.circle-empty {
+    height: 7vw;
+    width: 7vw;
+    resize: both;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+}
+  
+.circle-purple {
+    height: 7vw;
+    width: 7vw;
+    resize: both;
+    background-color: purple;
+    border-radius: 50%;
+}
+  
+.circle-yellow {
+    height: 7vw;
+    width: 7vw;
+    resize: both;
+    background-color: yellow;
+    border-radius: 50%;
+}
+  
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+  
+.connect-four {
+    display: flex;
+    flex-direction: row;
+    background-color: darkgreen;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.title-container {
+    margin: 0 auto;
+    max-width: 80.0rem;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+
+  h1 {
+      justify-self: center;
+  }
