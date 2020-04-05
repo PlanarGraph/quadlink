@@ -11,7 +11,8 @@ defmodule Quadlink.Application do
       Quadlink.Registry,
       Quadlink.GameSupervisor,
       # Start the endpoint when the application starts
-      QuadlinkWeb.Endpoint
+      QuadlinkWeb.Endpoint,
+      QuadlinkWeb.Presence
       # Starts a worker by calling: Quadlink.Worker.start_link(arg)
       # {Quadlink.Worker, arg},
     ]

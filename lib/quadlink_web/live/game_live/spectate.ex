@@ -35,7 +35,6 @@ defmodule QuadlinkWeb.GameLive.Spectate do
 
     socket
     |> assign(:board, @board)
-    |> assign(:winner, nil)
     |> to_tuple(:ok)
   end
 
@@ -45,10 +44,16 @@ defmodule QuadlinkWeb.GameLive.Spectate do
     |> to_tuple(:noreply)
   end
 
-  def handle_info({:winner, color}, socket) do
+  def handle_info({:winner, name}, socket) do
     socket
-    |> put_flash(:info, "#{color} wins!")
-    |> assign(:winner, color)
+    |> put_flash(:info, name <> " Wins!")
+    |> to_tuple(:noreply)
+  end
+
+  def handle_info(:reset, socket) do
+    socket
+    |> assign(:board, @board)
+    |> clear_flash()
     |> to_tuple(:noreply)
   end
 

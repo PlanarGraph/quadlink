@@ -18,6 +18,7 @@
                         'Elixir.QuadlinkWeb.LayoutView',
                         'Elixir.QuadlinkWeb.PageController',
                         'Elixir.QuadlinkWeb.PageView',
+                        'Elixir.QuadlinkWeb.Presence',
                         'Elixir.QuadlinkWeb.Router',
                         'Elixir.QuadlinkWeb.Router.Helpers',
                         'Elixir.QuadlinkWeb.UserSocket']},

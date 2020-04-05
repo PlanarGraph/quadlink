@@ -2,29 +2,34 @@
 
 @import "./phoenix.css";
 
+header {
+    background-color: rgb(29, 28, 28);
+    color: snow;
+}
+
 body {
     background-color: rgb(29, 28, 28);
 }
 
 .circle-empty {
-    height: 7vw;
-    width: 7vw;
+    height: 8vw;
+    width: 8vw;
     resize: both;
     background-color: rgb(29, 28, 28);
     border-radius: 50%;
 }
   
 .circle-purple {
-    height: 7vw;
-    width: 7vw;
+    height: 8vw;
+    width: 8vw;
     resize: both;
     background-color: purple;
     border-radius: 50%;
 }
   
 .circle-yellow {
-    height: 7vw;
-    width: 7vw;
+    height: 8vw;
+    width: 8vw;
     resize: both;
     background-color: yellow;
     border-radius: 50%;
@@ -45,8 +50,8 @@ body {
     justify-self: center;
     align-self: center;
     align-content: center;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .title-container {
@@ -60,4 +65,45 @@ body {
 
   h1 {
       justify-self: center;
+  }
+
+  .controller {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .cinput {
+      width: 90%;
+      margin: 2vw;
+  }
+
+  .cbutton-yellow {
+      width: 100%;
+      background-color: yellow;
+      border-color: black;
+      color: black;
+      font-size: 2rem;
+  }
+
+  .cbutton-purple {
+      width: 100%;
+      background-color: purple;
+      border-color: black;
+      font-size: 2rem;
+  }
+
+  .ctext {
+      color: white;
+  }
+
+  @media (min-width: 42.0rem) { /* Small devices (landscape phones, 576px and up) */
+    .controller {
+        justify-content: space-evenly;
+    }
+    
+    .cinput {
+        width: 14%;
+        margin: 0px;
+    }
   }
