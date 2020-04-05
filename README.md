@@ -1,5 +1,9 @@
 # Quadlink
 
+### Link four to win the board!
+
+![Game Image](/quadlink.png)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
